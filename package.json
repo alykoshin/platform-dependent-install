@@ -1,6 +1,6 @@
 {
   "name": "platform-dependent-modules",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Platform dependent modules installation",
   "main": "./index.js",
   "engines": {
@@ -44,8 +44,7 @@
     "url": "https://github.com/alykoshin/platform-dependent-modules/issues"
   },
   "homepage": "https://github.com/alykoshin/platform-dependent-modules",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {},
   "config": {
     "platformDependentModules": {
