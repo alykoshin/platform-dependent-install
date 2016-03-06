@@ -1,5 +1,5 @@
 {
-  "name": "platform-dependent-install",
+  "name": "platform-dependent-modules",
   "version": "0.0.0",
   "description": "Platform dependent modules installation",
   "main": "./index.js",
@@ -32,31 +32,29 @@
     "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "keywords": [
-      "platform,dependent,modules,install,installation,win32,win64,linux,darwin,sunos,freebsd"
+    "platform,dependent,modules,install,installation,win32,win64,linux,darwin,sunos,freebsd"
   ],
   "author": "Alexander <alykoshin@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alykoshin/platform-dependent-install.git"
+    "url": "https://github.com/alykoshin/platform-dependent-modules.git"
   },
   "bugs": {
-    "url": "https://github.com/alykoshin/platform-dependent-install/issues"
+    "url": "https://github.com/alykoshin/platform-dependent-modules/issues"
   },
-  "homepage": "https://github.com/alykoshin/platform-dependent-install",
+  "homepage": "https://github.com/alykoshin/platform-dependent-modules",
   "dependencies": {
-    "minimist": "^1.2.0"
+    "npm": "^3.8.0"
   },
-  "devDependencies": {
-    "chai": "^3.4.1",
-    "chai-things": "^0.2.0",
-    "coveralls": "^2.11.4",
-    "eslint": "^1.10.3",
-    "istanbul": "^0.4.1",
-    "jshint": "^2.8.0",
-    "jsinspect": "^0.7.2",
-    "mocha": "^2.3.4",
-    "mockery": "^1.4.0",
-    "sinon": "^1.17.2"
+  "devDependencies": {},
+  "config": {
+    "platformDependentModules": {
+      "linux": ["empty-module"],
+      "win32": ["empty-module"],
+      "darwin": ["empty-module"],
+      "freebsd": ["empty-module"],
+      "sunos": ["empty-module"]
+    }
   }
 }
