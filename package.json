@@ -45,7 +45,6 @@
   },
   "homepage": "https://github.com/alykoshin/platform-dependent-modules",
   "dependencies": {
-    "npm": "^3.8.0"
   },
   "devDependencies": {},
   "config": {
