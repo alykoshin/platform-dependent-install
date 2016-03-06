@@ -1,6 +1,6 @@
 {
   "name": "platform-dependent-modules",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Platform dependent modules installation",
   "main": "./index.js",
   "engines": {
@@ -50,11 +50,21 @@
   "devDependencies": {},
   "config": {
     "platformDependentModules": {
-      "linux": ["empty-module"],
-      "win32": ["empty-module"],
-      "darwin": ["empty-module"],
-      "freebsd": ["empty-module"],
-      "sunos": ["empty-module"]
+      "linux": [
+        "empty-module"
+      ],
+      "win32": [
+        "empty-module"
+      ],
+      "darwin": [
+        "empty-module"
+      ],
+      "freebsd": [
+        "empty-module"
+      ],
+      "sunos": [
+        "empty-module"
+      ]
     }
   }
 }
