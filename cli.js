@@ -4,7 +4,7 @@
 
 
 var main = require('./');
-var thisPkg = require('../package.json');
+var thisPkg = require('./package.json');
 var logPrefix = '* ['+thisPkg.name+'] ';
 
 

@@ -24,6 +24,79 @@ npm install --save platform-dependent-modules
 
 ## Usage
 
+Add `config` section of `package.json` following text:
+
+```json
+{
+  ...
+  "config": {
+    "platformDependentModules": {
+      "linux": [
+        "empty-module"
+      ],
+      "win32": [
+        "empty-module"
+      ],
+      "darwin": [
+        "empty-module"
+      ],
+      "freebsd": [
+        "empty-module"
+      ],
+      "sunos": [
+        "empty-module"
+      ]
+    }
+  ...
+}
+```
+
+Add `config` section of `package.json` following text:
+
+```json
+{
+  ...
+  "scripts": {
+    "_install": "node node_modules/platform-specific-modules/cli.js"
+    "install": "npm run _install"
+  }
+  ...
+}
+```
+
+Now run only this script: 
+
+```
+npm run _install
+```
+
+Or during complete install (after it):
+
+```
+npm run _install
+```
+
+To run the example (Linux) 
+
+```sh
+$ ./examples/example.sh 
+* [platform-dependent-modules] Starting ...
+* [platform-dependent-modules] Checking platform...
+* [platform-dependent-modules] Checking modules list...
+* [platform-dependent-modules] Installing packages: empty-module
+platform-dependent-modules@0.0.2 /home/alykoshin/sync/al-projects/dev/npm/platform-dependent-modules
+└── empty-module@0.0.2  extraneous
+
+* [platform-dependent-modules] empty-module@0.0.2,/home/alykoshin/sync/al-projects/dev/npm/platform-dependent-modules/node_modules/empty-module
+* [platform-dependent-modules] Installation success
+
+```
+
+To run the example (Windows) 
+
+```cmd
+> ./examples/example.cmd 
+```
 
 ## Credits
 [Alexander](https://github.com/alykoshin/)
