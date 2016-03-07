@@ -3,6 +3,9 @@
   "version": "0.0.4",
   "description": "Platform dependent modules installation",
   "main": "./index.js",
+  "bin": {
+    "platform-dependent-modules": "./cli.js"
+  },
   "engines": {
     "node": ">=0.10"
   },
