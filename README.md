@@ -24,7 +24,7 @@ npm install --save platform-dependent-modules
 
 ## Usage
 
-Add `config` section of `package.json` following text:
+Add to `config` section of `package.json` following text:
 
 ```json
 {
@@ -51,14 +51,14 @@ Add `config` section of `package.json` following text:
 }
 ```
 
-Add `config` section of `package.json` following text:
+Add to `config` section of `package.json` following text:
 
 ```json
 {
   ...
   "scripts": {
-    "_install": "node node_modules/platform-specific-modules/cli.js"
-    "install": "npm run _install"
+    "_postinstall": "platform-dependent-modules",
+    "postinstall": "npm run _postinstall",
   }
   ...
 }
@@ -67,13 +67,13 @@ Add `config` section of `package.json` following text:
 Now run only this script: 
 
 ```
-npm run _install
+npm run _postinstall
 ```
 
-Or during complete install (after it):
+Or during `postinstall` phase of `install`:
 
 ```
-npm run _install
+npm run install
 ```
 
 To run the example (Linux) 
