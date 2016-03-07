@@ -1,6 +1,6 @@
 {
   "name": "platform-dependent-modules",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Platform dependent modules installation",
   "main": "./index.js",
   "bin": {
