@@ -22,10 +22,10 @@ Installation of platform-dependent modules is run on `postinstall` trigger.
 
 ## 
 Sometime during upgrade you may get 'Access denied' message. 
-Try to remove modules using `platform-specific` modules manually and rerun `npm install`  
+Try to remove modules using `platform-specific-modules` module manually and rerun `npm install`  
 
 ##
-Please, be aware that if you run `npm install` on one machine and copied project files with `node_modules` subdirectory to another computer with diffferent platform, you'll need to install each module uses this package manually by `npm install <module>` or by full reinstall (removing `node_modules` and running `npm install`)
+Please, be aware that if you run `npm install` on one machine and copied project files with `node_modules` subdirectory to another computer with different platform, you'll need to install each module uses this package manually by `npm install <module>` or by full reinstall (removing `node_modules` and running `npm install`)
 
 
 If you have different needs regarding the functionality, please add a [feature request](https://github.com/alykoshin/platform-dependent-modules/issues).
