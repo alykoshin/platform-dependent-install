@@ -111,9 +111,6 @@ To run the example (Linux)
 
 ```sh
 $ ./examples/example.sh 
-* [platform-dependent-modules] Starting ...
-* [platform-dependent-modules] Checking platform...
-* [platform-dependent-modules] Checking modules list...
 * [platform-dependent-modules] Installing packages: empty-module
 platform-dependent-modules@0.0.2 /home/alykoshin/sync/al-projects/dev/npm/platform-dependent-modules
 └── empty-module@0.0.2  extraneous

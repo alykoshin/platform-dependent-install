@@ -13,7 +13,7 @@ main.install(function(err) {
     console.log(logPrefix + 'Installation error');
     process.exit(-1);
   }
-  console.log(logPrefix + 'Installation success');
+  //console.log(logPrefix + 'Installation finished');
   process.exit(0);
 });
 
