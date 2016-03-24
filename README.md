@@ -22,7 +22,7 @@ Installation of platform-dependent modules is run on `postinstall` trigger.
 
 ## 
 Sometime during upgrade you may get 'Access denied' message. 
-Try to remove modules using `platform-specific-modules` module manually and rerun `npm install`  
+Try to remove modules using this module `platform-specific-modules` manually and rerun `npm install`  
 
 ##
 Please, be aware that if you run `npm install` on one machine and copied project files with `node_modules` subdirectory to another computer with different platform, you'll need to install each module uses this package manually by `npm install <module>` or by full reinstall (removing `node_modules` and running `npm install`)
@@ -62,6 +62,22 @@ Add to `config` section of `package.json` following text:
         "empty-module"
       ]
     }
+  ...
+}
+```
+
+Or (more live example):
+
+```json
+{
+  ...
+  "config": {
+    "platformDependentModules": {
+      "win32": [
+        "msnodesqlv8@^0.1.35"
+      ]
+    }
+  }
   ...
 }
 ```
