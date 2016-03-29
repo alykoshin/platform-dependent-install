@@ -20,9 +20,30 @@ To prevent installation failure, you may define which modules for which platform
 
 Installation of platform-dependent modules is run on `postinstall` trigger.
 
-## 
-Sometime during upgrade you may get 'Access denied' message. 
-Try to remove modules using this module `platform-specific-modules` manually and rerun `npm install`  
+## Troubleshooting
+ 
+Sometimes after `platform-dependent-modules` version update command `npm install` may fail with following message: 
+
+Windows:
+
+```
+'platform-dependent-modules' is not recognized as an internal or external command, operable program or batch file.
+```
+
+Remove `platform-specific-modules` manually, install it again and rerun `npm install`  
+
+```
+npm r platform-dependent-modules
+npm i platform-dependent-modules
+npm i
+```
+
+If you getting error for some of the modules configured using 'platform-dependent-modules', like in example below `winston-winlog2`:
+
+```
+    Error: Cannot find module 'winston-winlog2'
+```
+
 
 ##
 Please, be aware that if you run `npm install` on one machine and copied project files with `node_modules` subdirectory to another computer with different platform, you'll need to install each module uses this package manually by `npm install <module>` or by full reinstall (removing `node_modules` and running `npm install`)
