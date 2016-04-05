@@ -120,7 +120,7 @@ Add to `config` section of `package.json` following text:
 {
   ...
   "scripts": {
-    "_postinstall": "node ./node_modules/platform-dependent-modules",
+    "_postinstall": "node ./node_modules/platform-dependent-modules/cli.js",
     "postinstall": "npm run _postinstall",
   }
   ...
