@@ -24,13 +24,23 @@ Installation of platform-dependent modules is run on `postinstall` trigger.
  
 Sometimes after `platform-dependent-modules` version update command `npm install` may fail with following message: 
 
+### 1
+
 Windows:
 
 ```
 'platform-dependent-modules' is not recognized as an internal or external command, operable program or batch file.
 ```
 
-Remove `platform-specific-modules` manually, install it again and rerun `npm install`  
+### 2
+
+Linux: 
+
+```
+sh: 1: platform-dependent-modules: Permission denied
+```
+
+In both cases it is needed to reinstall `platform-specific-modules` manually. Remove it and install again, then rerun `npm install`  
 
 ```
 npm r platform-dependent-modules
@@ -43,6 +53,7 @@ If you getting error for some of the modules configured using 'platform-dependen
 ```
     Error: Cannot find module 'winston-winlog2'
 ```
+
 
 
 ##
@@ -109,7 +120,7 @@ Add to `config` section of `package.json` following text:
 {
   ...
   "scripts": {
-    "_postinstall": "platform-dependent-modules",
+    "_postinstall": "node ./node_modules/platform-dependent-modules",
     "postinstall": "npm run _postinstall",
   }
   ...
