@@ -1,1 +1,1 @@
-node ./cli.js
+node ..\cli.js

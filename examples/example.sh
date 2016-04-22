@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-node ./cli.js
+node ../cli.js
