@@ -98,7 +98,7 @@ Add to `config` section of `package.json` following text:
 }
 ```
 
-Or (more live example):
+Or (more live examples):
 
 ```json
 {
@@ -112,6 +112,25 @@ Or (more live example):
   }
   ...
 }
+```
+
+You may also add platform-dependent module to `optionalDependencies`:
+
+```json
+{
+  ...
+  "optionalDependencies": {
+    "winston-winlog2": "^1.0.1"
+  },
+  "config": {
+    "platformDependentModules": {
+      "win32": [
+        "winston-winlog2@^1.0.1"
+      ]
+    }
+  }
+  ...
+}  
 ```
 
 Add to `config` section of `package.json` following text:
@@ -136,7 +155,7 @@ npm run _postinstall
 Or during `postinstall` phase of `install`:
 
 ```
-npm run install
+npm install
 ```
 
 To run the example (Linux) 

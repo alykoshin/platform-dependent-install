@@ -1,6 +1,6 @@
 {
   "name": "platform-dependent-modules-test",
-  "version": "0.0.12",
+  "version": "0.0.0",
   "description": "Platform dependent modules installation test",
   "private": true,
   "main": "./index.js",
